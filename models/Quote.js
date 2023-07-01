@@ -1,37 +1,46 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const NasaSchema = new Schema(
+const QuoteSchema = new Schema(
   {
-    date: {
+    quote: {
       type: String,
       required: true
     },
-    explanation: {
+    length: {
+      type: Number,
+      required: true
+    },
+    author: {
       type: String,
       required: true
     },
-    hdurl: {
-      type: String,
-      required: true
-    },
-    media_type: {
-      type: String,
-      required: true
-    },
-    service_version: {
+    language: {
       type: String
+    },
+    tags: {
+      type: [String]
+    },
+    permalink: {
+      type: String,
+      required: true
     },
     title: {
       type: String,
       required: true
     },
-    url: {
+    category: {
       type: String,
       required: true
+    },
+    background: {
+      type: String
+    },
+    date: {
+      type: String
     }
   },
   { timestamps: true }
 );
 
-module.exports = Nasa = mongoose.model('Nasa', NasaSchema);
+module.exports = Quote = mongoose.model('Quote', QuoteSchema);

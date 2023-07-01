@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const NasaSchema = new Schema({
+const CustomSchema = new Schema({
     // complete schema
   });
 
-module.exports = Nasa = mongoose.model('Nasa', NasaSchema);
+module.exports = Nasa = mongoose.model('Nasa', CustomSchema);
