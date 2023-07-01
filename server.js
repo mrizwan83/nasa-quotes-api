@@ -25,8 +25,8 @@ db.once('open', () => console.log("Connected to Mongo Database"));
 const makeDailyAPICall = () => {
 
     // Call the functions immediately to fetch and save the data on server start
-    // getPictureOfTheDay();
-    // getQuoteOfTheDay();
+    getPictureOfTheDay();
+    getQuoteOfTheDay();
 
     // Set the interval to 24 hours (24 * 60 * 60 * 1000 milliseconds)
     setInterval(getPictureOfTheDay, 24 * 60 * 60 * 1000);

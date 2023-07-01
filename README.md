@@ -11,7 +11,7 @@ Nasa-Quotes-API is an API server that makes daily API calls to retrieve data fro
 To install and set up the project on your local machine, follow these steps:
 
 1. Clone the project repository: `git clone <repository_url>`
-2. Navigate to the project directory: `cd Nasa-Quotes-API`
+2. Navigate to the project directory: `cd nasa-quotes-api`
 3. Install the dependencies: `npm install`
 4. Set up the environment variables:
    - Create a `.env` file in the project root directory.
@@ -19,8 +19,11 @@ To install and set up the project on your local machine, follow these steps:
      ```
      DATABASE_URL=<mongodb_connection_string>
      PORT=<port_number>
+     QUOTE_API_KEY=<your_theysaidsoquotes_api_key>
+     NASA_API_KEY=<your_nasa_api_key>
      ```
      Replace `<mongodb_connection_string>` with your MongoDB connection string, and `<port_number>` with the desired port for the server to run on.
+     Replace API keys with your personal API keys from TheySaidSo Quotes API and NASA API
 5. Start the server: `npm start`
 
 ## Usage

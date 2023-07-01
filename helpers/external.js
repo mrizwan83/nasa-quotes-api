@@ -10,7 +10,7 @@ const getPictureOfTheDay = async () => {
 
     // Handle the response data
     const pictureData = response.data;
-    console.log('Picture of the day:', pictureData);
+    // console.log('Picture of the day:', pictureData);
 
     // Save the data to the Nasa model
     const nasaEntry = new Nasa(pictureData);
@@ -35,7 +35,7 @@ const getQuoteOfTheDay = async () => {
 
     // Handle the response data
     const quote = response.data.contents.quotes[0];
-    console.log('Quote of the day:', quote);
+    // console.log('Quote of the day:', quote);
 
     // Save the data to the Quote model
     const quoteEntry = new Quote(quote);
