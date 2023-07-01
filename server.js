@@ -14,7 +14,7 @@ const customRoute = require("./api/custom");
 
 
 // connect to database
-mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
 const db = mongoose.connection;
 db.on('error', (error) => console.error(error));
 db.once('open', () => console.log("Connected to Mongo Database"));
@@ -49,5 +49,3 @@ const port = process.env.PORT || 5000;
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
 });
-
-// deploy to netlify
