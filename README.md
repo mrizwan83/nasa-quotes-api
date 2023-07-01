@@ -18,11 +18,10 @@ To install and set up the project on your local machine, follow these steps:
    - Add the following variables to the `.env` file:
      ```
      DATABASE_URL=<mongodb_connection_string>
-     PORT=<port_number>
      QUOTE_API_KEY=<your_theysaidsoquotes_api_key>
      NASA_API_KEY=<your_nasa_api_key>
      ```
-     Replace `<mongodb_connection_string>` with your MongoDB connection string, and `<port_number>` with the desired port for the server to run on.
+     Replace `<mongodb_connection_string>` with your MongoDB connection string
      Replace `<your_theysaidsoquotes_api_key>` and `<your_nasa_api_key>` API keys with your personal API keys from TheySaidSo Quotes API and NASA API
 5. Start the server: `npm start`
 
