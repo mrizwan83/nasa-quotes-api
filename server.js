@@ -4,6 +4,9 @@ const app = express();
 const mongoose = require('mongoose');
 const axios = require('axios');
 
+// Import methods to make external api calls
+const { getPictureOfTheDay, getQuoteOfTheDay } = require('./external');
+
 
 // Import and use the API routes
 const nasaRoute = require("./api/nasa");
@@ -17,48 +20,6 @@ const db = mongoose.connection;
 db.on('error', (error) => console.error(error));
 db.once('open', () => console.log("Connected to Mongo Database"));
 
-// Function to make the API call
-const getPictureOfTheDay = async () => {
-    try {
-        const response = await axios.get('https://api.nasa.gov/planetary/apod', {
-            params: {
-                api_key: 'DEMO_KEY', // Replace with your NASA API key
-            },
-        });
-
-        // Handle the response data
-        const pictureData = response.data;
-        console.log('Picture of the day:', pictureData);
-        // Process or display the picture data as needed
-
-    } catch (error) {
-        console.error('Error fetching picture of the day:', error);
-        // Handle the error
-    }
-};
-
-const getQuoteOfTheDay = async () => {
-    try {
-        const response = await axios.get('https://quotes.rest/qod', {
-            params: {
-                category: 'inspire'
-            },
-            headers: {
-                'Content-Type': 'application/json',
-                'X-Theysaidso-Api-Secret': process.env.QUOTE_API_KEY
-            }
-        });
-
-        // Handle the response data
-        const quote = response.data.contents.quotes[0];
-        console.log('Quote of the day:', quote);
-        // Process or display the quote as needed
-
-    } catch (error) {
-        console.error('Error fetching quote of the day:', error);
-        // Handle the error
-    }
-};
 
 // Function to execute the API call every day
 
