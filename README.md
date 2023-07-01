@@ -40,6 +40,9 @@ Users can interact with the API by making HTTP requests to the provided endpoint
 
 To retrieve both NASA and quote data for the current day, users can make a `GET` request to `/custom/now`. For specific queries, users can make requests to the corresponding endpoints, providing the required parameters.
 
+- [Live Site Test for Custom Route](https://nasa-quotes-api.onrender.com/api/custom/now)
+
+
 ## Configuration
 
 The project requires the following environment variables to be set in the `.env` file:
