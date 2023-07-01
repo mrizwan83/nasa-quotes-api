@@ -23,7 +23,7 @@ To install and set up the project on your local machine, follow these steps:
      NASA_API_KEY=<your_nasa_api_key>
      ```
      Replace `<mongodb_connection_string>` with your MongoDB connection string, and `<port_number>` with the desired port for the server to run on.
-     Replace API keys with your personal API keys from TheySaidSo Quotes API and NASA API
+     Replace `<your_theysaidsoquotes_api_key>` and `<your_nasa_api_key>` API keys with your personal API keys from TheySaidSo Quotes API and NASA API
 5. Start the server: `npm start`
 
 ## Usage
