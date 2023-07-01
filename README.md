@@ -173,3 +173,23 @@ Example response for `GET /api/quotes`:
 ## Error Handling
 
 If an error occurs, the API will return an appropriate HTTP status code and an error message in the response body.
+
+## Attribution
+
+Note: If you are using our public API or quotes from our website, an attribution link back to theysaidso.com is required. If you don't want to display attribution, please sign up for the private API. Here is the code you can cut and paste to provide attribution:
+
+```html
+<span style="z-index:50;font-size:0.9em; font-weight: bold;">
+  <img src="https://theysaidso.com/branding/theysaidso.png" height="20" width="20" alt="theysaidso.com"/>
+  <a href="https://theysaidso.com" title="Powered by quotes from theysaidso.com" style="color: #ccc; margin-left: 4px; vertical-align: middle;">
+    They Said So®
+  </a>
+</span>
+```
+## Attribution
+
+If you are using our public API or quotes from our website, please include the following attribution link back to theysaidso.com:
+
+Powered by quotes from [theysaidso.com](https://theysaidso.com)
+
+
