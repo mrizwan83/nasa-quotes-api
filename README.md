@@ -17,7 +17,7 @@ To install and set up the project on your local machine, follow these steps:
    - Create a `.env` file in the project root directory.
    - Add the following variables to the `.env` file:
      ```
-     DATABASE_URL=<mongodb_connection_string>
+     MONGODB_URI=<mongodb_connection_string>
      QUOTE_API_KEY=<your_theysaidsoquotes_api_key>
      NASA_API_KEY=<your_nasa_api_key>
      ```
@@ -47,8 +47,7 @@ To retrieve both NASA and quote data for the current day, users can make a `GET`
 
 The project requires the following environment variables to be set in the `.env` file:
 
-- `DATABASE_URL`: The connection string for the MongoDB database.
-- `PORT`: The port number on which the server will listen.
+- `MONGODB_URI`: The connection string for the MongoDB database.
 - `QUOTE_API_KEY`: Your API KEY from THEYSAIDSO API.
 - `NASA_API_KEY`: Your API KEY from NASA API.
 
