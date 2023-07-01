@@ -4,11 +4,11 @@ const Nasa = require('../models/Nasa');
 const Quote = require('../models/Quote');
 
 
-router.get("/test", (req, res) => {
+router.get("/", (req, res) => {
     res.json({ msg: "This is the custom data route"})
 });
 
-router.get('/', async (req, res) => {
+router.get('/now', async (req, res) => {
     try {
       // Fetch the latest data from the Nasa model
       const nasaData = await Nasa.findOne().sort({ createdAt: -1 }).exec();

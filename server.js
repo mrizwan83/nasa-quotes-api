@@ -4,7 +4,7 @@ const app = express();
 const mongoose = require('mongoose');
 
 // Import methods to make external api calls
-const { getPictureOfTheDay, getQuoteOfTheDay } = require('./external');
+const { getPictureOfTheDay, getQuoteOfTheDay } = require('./helpers/external');
 
 
 // Import and use the API routes
