@@ -4,7 +4,7 @@
   "description": "nasa-quotes-api",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "start": "node server.js"
   },
   "author": "RizzyWebWorks",
   "license": "ISC",
