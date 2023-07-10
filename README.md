@@ -1,3 +1,17 @@
+# Issue with Hosting on Render
+Please note that if you choose to host this application on Render, you may encounter an issue with the scheduled data retrieval and logging functionality. Render's hosting service has certain limitations and behavior that affect background tasks and scheduled jobs.
+
+The issue arises from Render's sleep mode feature, which may cause the scheduled task to stop running when the site is inactive. As a result, the data will not be logged unless the site is visited manually.
+
+To ensure consistent data logging, you have a few options:
+
+Check Render's documentation: Refer to Render's official documentation or contact their support team to understand their specific limitations and recommended practices for running scheduled tasks or background processes.
+
+Explore alternative hosting services: Consider using a different hosting service that better supports your requirements, such as those that allow background tasks or provide features for scheduling jobs.
+
+External cron service: Implement an external cron service, such as cron-job.org or AWS CloudWatch Events, to trigger your API request and data logging at the desired interval. This will ensure that your task is executed consistently, regardless of Render's sleep mode or restrictions.
+
+By providing this information, you can give potential users of your API a heads-up about the issue with Render and offer alternative solutions to ensure smooth data retrieval and logging.
 # Nasa-Quotes-API
 
 This is the README for the Nasa-Quotes-API project.
